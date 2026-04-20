@@ -7,7 +7,7 @@ export default function Home() {
     <div className="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container antialiased overflow-x-hidden min-h-screen flex flex-col">
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/15 shadow-[0px_20px_40px_rgba(0,88,189,0.04)] dark:shadow-none font-headline tracking-tight text-sm font-semibold">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
-          <div className="text-xl font-bold tracking-tighter text-on-surface cursor-pointer hover:bg-surface-container-low rounded-lg transition-all active:scale-95 duration-200 px-2 py-1">
+          <div className="text-xl font-bold tracking-tighter text-on-surface cursor-pointer hover:bg-surface-container-low rounded-lg transition-all active:scale-95 duration-200 px-2 py-1" aria-label="ArenaFlow Home">
               ArenaFlow
           </div>
           <div className="hidden md:flex gap-8 items-center">
@@ -18,8 +18,8 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Link href="/sign-in" className="hidden md:block hover:bg-surface-container-low rounded-lg transition-all active:scale-95 duration-200 px-4 py-2 text-on-surface/70 hover:text-primary">Sign In</Link>
-            <button className="bg-gradient-to-r from-primary to-tertiary text-on-primary rounded-full px-6 py-2 shadow-sm hover:shadow-[0px_20px_40px_var(--color-primary)] transition-all active:scale-95 duration-200 font-bold">
+            <Link href="/sign-in" className="hidden md:block hover:bg-surface-container-low rounded-lg transition-all active:scale-95 duration-200 px-4 py-2 text-on-surface/70 hover:text-primary" aria-label="Sign in to your account">Sign In</Link>
+            <button className="bg-gradient-to-r from-primary to-tertiary text-on-primary rounded-full px-6 py-2 shadow-sm hover:shadow-[0px_20px_40px_var(--color-primary)] transition-all active:scale-95 duration-200 font-bold" aria-label="Begin setup with ArenaFlow">
                 Get Started
             </button>
           </div>
@@ -33,7 +33,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7 space-y-8 z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-sm font-semibold text-on-surface-variant shadow-sm backdrop-blur-sm">
-                <span className="material-symbols-outlined text-primary text-base">auto_awesome</span>
+                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">auto_awesome</span>
                 Build with AI Precision
               </div>
               <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1] -ml-1">
@@ -44,12 +44,12 @@ export default function Home() {
                 Architecting the future of crowd dynamics. A precision engine designed to optimize movement, increase safety, and elevate the attendee experience through high-contrast, real-time spatial analytics.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/flow-map" className="bg-gradient-to-r from-primary to-tertiary text-on-primary rounded-full px-8 py-4 text-lg font-bold shadow-md hover:shadow-lg transition-all active:scale-95 duration-200 flex justify-center items-center gap-2">
+                <Link href="/flow-map" className="bg-gradient-to-r from-primary to-tertiary text-on-primary rounded-full px-8 py-4 text-lg font-bold shadow-md hover:shadow-lg transition-all active:scale-95 duration-200 flex justify-center items-center gap-2" aria-label="Navigate to Flow Map dashboard">
                   Deploy ArenaFlow
-                  <span className="material-symbols-outlined text-xl">arrow_forward</span>
+                  <span className="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
                 </Link>
                 <button className="bg-surface-container-lowest border border-outline-variant/30 text-on-surface rounded-full px-8 py-4 text-lg font-bold hover:bg-surface-container-high transition-all active:scale-95 duration-200 flex justify-center items-center gap-2">
-                  <span className="material-symbols-outlined text-xl">play_circle</span>
+                  <span className="material-symbols-outlined text-xl" aria-hidden="true">play_circle</span>
                   View Architecture
                 </button>
               </div>
@@ -70,7 +70,7 @@ export default function Home() {
                       <p className="font-headline font-bold text-xl text-on-surface">Optimal</p>
                     </div>
                     <div className="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
-                      <span className="material-symbols-outlined">trending_up</span>
+                      <span className="material-symbols-outlined" aria-hidden="true">trending_up</span>
                     </div>
                   </div>
                 </div>

@@ -41,6 +41,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+import { GoogleAnalytics } from "@/components/google-analytics";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,6 +86,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground text-base tracking-tight">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
           {children}
         </ThemeProvider>
       </body>
