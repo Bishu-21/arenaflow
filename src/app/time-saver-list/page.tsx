@@ -7,7 +7,7 @@ export default function TimeSaverListPage() {
       {/* TopAppBar */}
       <header className="bg-surface flex justify-between items-center w-full px-6 py-4 z-40 sticky top-0">
         <div className="flex items-center gap-3">
-          <span className="material-symbols-outlined text-[#4285F4]" style={{ fontVariationSettings: "'FILL' 0" }}>analytics</span>
+          <span className="material-symbols-outlined text-[var(--color-primary)]" style={{ fontVariationSettings: "'FILL' 0" }}>analytics</span>
           <span className="text-xl font-headline font-black text-on-surface tracking-tighter">ArenaFlow</span>
         </div>
         <div className="flex items-center gap-4">
@@ -175,7 +175,7 @@ export default function TimeSaverListPage() {
           <span className="material-symbols-outlined mb-1 text-[24px]" style={{ fontVariationSettings: "'FILL' 0" }}>map</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Flow Map</span>
         </Link>
-        <Link href="/time-saver-list" className="flex flex-col items-center justify-center bg-gradient-to-br from-[#4285F4] to-[#ea4335] text-white rounded-xl px-4 py-2 hover:text-[#4285F4] transition-all transform scale-110 duration-300 ease-out">
+        <Link href="/time-saver-list" className="flex flex-col items-center justify-center bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-tertiary)] text-white rounded-xl px-4 py-2 hover:text-[var(--color-primary)] transition-all transform scale-110 duration-300 ease-out">
           <span className="material-symbols-outlined mb-1 text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Time-Saver</span>
         </Link>

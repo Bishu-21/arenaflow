@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { PredictiveAIHUD } from "@/components/predictive-ai-hud";
 
 export default function FlowMapPage() {
   return (
@@ -7,7 +8,7 @@ export default function FlowMapPage() {
       {/* TopAppBar */}
       <header className="bg-surface flex justify-between items-center w-full px-6 py-4 fixed top-0 z-40">
         <div className="flex items-center gap-4">
-          <button className="text-[#4285F4] hover:bg-surface-container transition-colors p-2 rounded-full flex items-center justify-center">
+          <button className="text-[var(--color-primary)] hover:bg-surface-container transition-colors p-2 rounded-full flex items-center justify-center">
             <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 0" }}>analytics</span>
           </button>
           <h1 className="font-headline font-bold tracking-tighter text-xl text-on-surface">ArenaFlow</h1>
@@ -70,6 +71,7 @@ export default function FlowMapPage() {
 
         {/* Floating UI / Bento Grids */}
         <div className="absolute bottom-6 left-4 right-4 z-30">
+          <PredictiveAIHUD />
           <div className="bg-surface/80 backdrop-blur-[20px] rounded-2xl p-5 border border-outline-variant/15 flex flex-col gap-4 shadow-[0_8px_32px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
             <div className="flex justify-between items-start">
               <div className="flex flex-col">
@@ -103,7 +105,7 @@ export default function FlowMapPage() {
 
       {/* BottomNavBar */}
       <nav className="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-surface/80 backdrop-blur-xl shadow-[0_-4px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_-4px_40px_rgba(0,0,0,0.5)] rounded-t-[2rem] md:hidden">
-        <Link href="/flow-map" className="flex flex-col items-center justify-center bg-gradient-to-br from-[#4285F4] to-[#ea4335] text-white rounded-xl px-4 py-2 hover:text-[#4285F4] transition-all transform scale-110 duration-300 ease-out">
+        <Link href="/flow-map" className="flex flex-col items-center justify-center bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-tertiary)] text-white rounded-xl px-4 py-2 hover:text-[var(--color-primary)] transition-all transform scale-110 duration-300 ease-out">
           <span className="material-symbols-outlined mb-1 text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>map</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Flow Map</span>
         </Link>

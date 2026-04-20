@@ -19,28 +19,28 @@ export default function PulseFeedbackPage() {
           <ThemeToggle />
         </div>
         <div className="mb-8">
-          <h1 className="font-headline font-black text-2xl tracking-tighter text-[#4285F4]">ArenaFlow</h1>
+          <h1 className="font-headline font-black text-2xl tracking-tighter text-[var(--color-primary)]">ArenaFlow</h1>
         </div>
         <nav className="flex-1 space-y-2">
           <Link href="/flow-map" className="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface/70 hover:bg-surface-container-highest font-headline font-medium transition-colors group">
-            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[#4285F4] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>domain</span>
+            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[var(--color-primary)] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>domain</span>
             <span>Stadium Zones</span>
           </Link>
           <Link href="/time-saver-list" className="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface/70 hover:bg-surface-container-highest font-headline font-medium transition-colors group">
-            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[#4285F4] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>history</span>
+            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[var(--color-primary)] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>history</span>
             <span>Alert History</span>
           </Link>
           {/* Active Tab */}
-          <Link href="/pulse-feedback" className="flex items-center gap-4 px-4 py-3 rounded-lg bg-surface-container-highest text-[#4285F4] font-headline font-bold">
-            <span className="material-symbols-outlined text-[#4285F4]" style={{ fontVariationSettings: "'FILL' 1" }}>electric_bolt</span>
+          <Link href="/pulse-feedback" className="flex items-center gap-4 px-4 py-3 rounded-lg bg-surface-container-highest text-[var(--color-primary)] font-headline font-bold">
+            <span className="material-symbols-outlined text-[var(--color-primary)]" style={{ fontVariationSettings: "'FILL' 1" }}>electric_bolt</span>
             <span>Pulse</span>
           </Link>
           <Link href="#" className="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface/70 hover:bg-surface-container-highest font-headline font-medium transition-colors group">
-            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[#4285F4] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>groups</span>
+            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[var(--color-primary)] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>groups</span>
             <span>Staff Directory</span>
           </Link>
           <Link href="#" className="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface/70 hover:bg-surface-container-highest font-headline font-medium transition-colors group">
-            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[#4285F4] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>settings</span>
+            <span className="material-symbols-outlined text-on-surface/70 group-hover:text-[var(--color-primary)] transition-colors" style={{ fontVariationSettings: "'FILL' 0" }}>settings</span>
             <span>System Settings</span>
           </Link>
         </nav>
@@ -49,7 +49,7 @@ export default function PulseFeedbackPage() {
       {/* Top App Bar (Mobile Only) */}
       <header className="md:hidden flex justify-between items-center w-full px-6 py-4 bg-surface z-50 sticky top-0">
         <div className="flex items-center gap-3">
-          <span className="material-symbols-outlined text-[#4285F4] text-2xl" style={{ fontVariationSettings: "'FILL' 0" }}>analytics</span>
+          <span className="material-symbols-outlined text-[var(--color-primary)] text-2xl" style={{ fontVariationSettings: "'FILL' 0" }}>analytics</span>
           <span className="text-xl font-black text-on-surface tracking-tighter font-headline">ArenaFlow</span>
         </div>
         <div className="flex items-center gap-4">
@@ -122,20 +122,20 @@ export default function PulseFeedbackPage() {
 
       {/* Bottom Nav Bar (Mobile Only) */}
       <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-surface/80 backdrop-blur-xl rounded-t-[2rem] shadow-[0_-4px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_-4px_40px_rgba(0,0,0,0.5)]">
-        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="/flow-map">
+        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[var(--color-primary)] transition-all" href="/flow-map">
           <span className="material-symbols-outlined text-2xl mb-1" style={{ fontVariationSettings: "'FILL' 0" }}>map</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Flow Map</span>
         </Link>
-        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="/time-saver-list">
+        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[var(--color-primary)] transition-all" href="/time-saver-list">
           <span className="material-symbols-outlined text-2xl mb-1" style={{ fontVariationSettings: "'FILL' 0" }}>schedule</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Time-Saver</span>
         </Link>
         {/* Active Nav Item */}
-        <Link className="flex flex-col items-center justify-center bg-gradient-to-br from-[#4285F4] to-[#ea4335] text-white rounded-xl px-4 py-2 transform scale-110 duration-300 ease-out shadow-lg" href="/pulse-feedback">
+        <Link className="flex flex-col items-center justify-center bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-tertiary)] text-white rounded-xl px-4 py-2 transform scale-110 duration-300 ease-out shadow-lg" href="/pulse-feedback">
           <span className="material-symbols-outlined text-2xl mb-1" style={{ fontVariationSettings: "'FILL' 1" }}>electric_bolt</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Pulse</span>
         </Link>
-        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="/">
+        <Link className="flex flex-col items-center justify-center text-on-surface/40 px-4 py-2 hover:text-[var(--color-primary)] transition-all" href="/">
           <span className="material-symbols-outlined text-2xl mb-1" style={{ fontVariationSettings: "'FILL' 0" }}>person</span>
           <span className="font-body text-[10px] uppercase tracking-widest font-bold">Profile</span>
         </Link>

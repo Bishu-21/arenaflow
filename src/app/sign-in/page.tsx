@@ -82,15 +82,15 @@ export default function SignInPage() {
       </main>
       
       {/* Footer */}
-      <footer className="w-full py-8 border-t border-[#c2c6d5]/15 bg-surface mt-auto">
+      <footer className="w-full py-8 border-t border-outline-variant/15 bg-surface text-on-surface-variant mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-4">
-          <p className="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-[#191b22]/50">
+          <p className="font-body text-sm leading-relaxed text-on-surface/50">
             © 2024 ArenaFlow. Precision Vapor.
           </p>
           <div className="flex items-center gap-6">
-            <a className="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-[#191b22]/50 hover:text-[#a8295b] transition-colors cursor-pointer" href="#">Terms of Service</a>
-            <a className="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-[#191b22]/50 hover:text-[#a8295b] transition-colors cursor-pointer" href="#">Privacy Policy</a>
-            <a className="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-[#191b22]/50 hover:text-[#a8295b] transition-colors cursor-pointer" href="#">Security</a>
+            <a className="font-body text-sm leading-relaxed text-on-surface/50 hover:text-tertiary transition-colors cursor-pointer" href="#">Terms of Service</a>
+            <a className="font-body text-sm leading-relaxed text-on-surface/50 hover:text-tertiary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+            <a className="font-body text-sm leading-relaxed text-on-surface/50 hover:text-tertiary transition-colors cursor-pointer" href="#">Security</a>
           </div>
         </div>
       </footer>
