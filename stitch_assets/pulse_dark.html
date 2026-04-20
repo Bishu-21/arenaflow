@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ArenaFlow - The Pulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "outline-variant": "#424753",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-container": "#b88900",
+                    "surface-container": "#201f1f",
+                    "on-primary-fixed": "#001a41",
+                    "background": "#131313",
+                    "surface-bright": "#393939",
+                    "on-tertiary": "#402d00",
+                    "surface-tint": "#adc6ff",
+                    "on-error": "#690005",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#ffdea0",
+                    "on-surface": "#e5e2e1",
+                    "inverse-on-surface": "#313030",
+                    "secondary": "#6ddd81",
+                    "on-background": "#e5e2e1",
+                    "secondary-container": "#30a550",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-secondary-container": "#003210",
+                    "primary-container": "#4d8efe",
+                    "surface-container-highest": "#353534",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-surface-variant": "#c2c6d5",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "surface": "#131313",
+                    "primary-fixed-dim": "#adc6ff",
+                    "primary-fixed": "#d8e2ff",
+                    "error-container": "#93000a",
+                    "primary": "#adc6ff",
+                    "tertiary": "#fbbc06",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-high": "#2a2a2a",
+                    "on-primary": "#002e69",
+                    "inverse-primary": "#005ac1",
+                    "secondary-fixed": "#89fa9b",
+                    "on-tertiary-container": "#372700",
+                    "on-secondary": "#003914",
+                    "on-primary-container": "#00285c",
+                    "on-primary-fixed-variant": "#004494",
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "outline": "#8c909f",
+                    "on-secondary-fixed": "#002108"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(19, 19, 19, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col md:flex-row pb-24 md:pb-0">
+<!-- Navigation Drawer (Desktop) -->
+<aside class="hidden md:flex flex-col bg-[#131313] w-80 fixed inset-y-0 left-0 z-[60] p-6 shadow-2xl shadow-black rounded-r-3xl">
+<div class="mb-8 flex items-center gap-4 bg-[#1c1b1b] p-4 rounded-xl mb-2">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-outline-variant/30 flex-shrink-0">
+<img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy5fAdfCdNIABuZKpXjkFm1GppANn7C9QKaopnbHrTD1Y0A2M-qWzo_RaFU3Bz5KILFB4cdGJeOnRaFTknqxcHcXz4UpqYy5qPTjcAwdHAS4lZ_9HHafdRDxXzEbjXS_A8bPxEiZ8ofbjibM_tZZkX5kTopruMdO_jNCeSFQeG8VV33rTG5PeIp4JboMEL8t3Q9zQMHUXmpDDVNU1YzNwA-30F7dgkw_stkRVFThEUlGdn-fzS_W5acd2LDCiko4eal6ePCjs87gRa"/>
+</div>
+<div>
+<h2 class="font-headline font-bold text-on-surface">Operations Center</h2>
+<p class="text-xs text-on-surface-variant font-label">Sector A-12 active</p>
+</div>
+</div>
+<div class="mb-8">
+<h1 class="font-headline font-black text-2xl tracking-tighter text-[#4285F4]">ArenaFlow</h1>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-[#e5e2e1]/70 hover:bg-[#1c1b1b] font-headline font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[#e5e2e1]/70 group-hover:text-[#4285F4] transition-colors" data-icon="domain">domain</span>
+<span>Stadium Zones</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-[#e5e2e1]/70 hover:bg-[#1c1b1b] font-headline font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[#e5e2e1]/70 group-hover:text-[#4285F4] transition-colors" data-icon="history">history</span>
+<span>Alert History</span>
+</a>
+<!-- Active Tab -->
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg bg-[#353534] text-[#4285F4] font-headline font-bold" href="#">
+<span class="material-symbols-outlined text-[#4285F4]" data-icon="electric_bolt" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+<span>Pulse</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-[#e5e2e1]/70 hover:bg-[#1c1b1b] font-headline font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[#e5e2e1]/70 group-hover:text-[#4285F4] transition-colors" data-icon="groups">groups</span>
+<span>Staff Directory</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-[#e5e2e1]/70 hover:bg-[#1c1b1b] font-headline font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[#e5e2e1]/70 group-hover:text-[#4285F4] transition-colors" data-icon="settings">settings</span>
+<span>System Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Top App Bar (Mobile Only) -->
+<header class="md:hidden flex justify-between items-center w-full px-6 py-4 bg-[#131313] docked full-width top-0 z-50 flat no shadows sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4285F4] text-2xl" data-icon="analytics">analytics</span>
+<span class="text-xl font-black text-[#e5e2e1] tracking-tighter font-headline">ArenaFlow</span>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30 flex-shrink-0">
+<img alt="Manager Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrO9LQD3RA-vXql_E_4C-vexpsMaF3DGpgfgeOwPdWVIisZY9u9rvwjO4ZpVAMp1cNb6LdF_FplHxEuq9xC5taIYNNedjpF0jhsnFHJ0ytcaBTsEq5ihSd-HKj6uIc8J9oTZV-1AeLqWeu-cjaJxFc9wzgQiVY4sIhIL740nuLK3u8SXylsO4QbRzk7-VGCAWPPq27IkeqdT__owNeop1sBINTGj0RwSoPVA2upeue-xuHLK9eSMSnslLZL-_K9ZzWv76cEfBoetIX"/>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full md:ml-80 flex flex-col items-center justify-center p-6 md:p-12 relative min-h-[calc(100vh-80px)] md:min-h-screen">
+<!-- Header Section -->
+<div class="w-full max-w-4xl mb-12 text-center md:text-left animate-[fadeIn_0.3s_ease-out]">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-4">The Pulse</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto md:mx-0">Report current sector density to update the global flow map instantly.</p>
+</div>
+<!-- Action Grid (Bento Style) -->
+<div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 animate-[fadeIn_0.4s_ease-out_both]">
+<!-- Empty Status -->
+<button class="group relative overflow-hidden bg-surface-container-low rounded-3xl p-8 flex flex-col items-start justify-between min-h-[240px] text-left hover:bg-surface-container-highest transition-all duration-300 transform hover:scale-[1.02] border border-transparent hover:border-outline-variant/15 outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl group-hover:bg-secondary/20 transition-all duration-500"></div>
+<div class="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(109,221,129,0.15)] group-hover:shadow-[0_0_30px_rgba(109,221,129,0.3)] transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="directions_run" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Empty</h3>
+<p class="font-label text-secondary font-semibold uppercase tracking-widest text-sm">Speedy Flow</p>
+</div>
+</button>
+<!-- Moderate Status -->
+<button class="group relative overflow-hidden bg-surface-container-low rounded-3xl p-8 flex flex-col items-start justify-between min-h-[240px] text-left hover:bg-surface-container-highest transition-all duration-300 transform hover:scale-[1.02] border border-transparent hover:border-outline-variant/15 outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+<div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(173,198,255,0.15)] group-hover:shadow-[0_0_30px_rgba(173,198,255,0.3)] transition-all">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="group" style="font-variation-settings: 'FILL' 1;">group</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Moderate</h3>
+<p class="font-label text-primary font-semibold uppercase tracking-widest text-sm">Steady Pace</p>
+</div>
+</button>
+<!-- Long Status -->
+<button class="group relative overflow-hidden bg-surface-container-low rounded-3xl p-8 flex flex-col items-start justify-between min-h-[240px] text-left hover:bg-surface-container-highest transition-all duration-300 transform hover:scale-[1.02] border border-transparent hover:border-outline-variant/15 outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-tertiary/10 rounded-full blur-3xl group-hover:bg-tertiary/20 transition-all duration-500"></div>
+<div class="w-16 h-16 rounded-2xl bg-tertiary/20 flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(251,188,6,0.15)] group-hover:shadow-[0_0_30px_rgba(251,188,6,0.3)] transition-all">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="hourglass_empty" style="font-variation-settings: 'FILL' 1;">hourglass_empty</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Long</h3>
+<p class="font-label text-tertiary font-semibold uppercase tracking-widest text-sm">Heavy Traffic</p>
+</div>
+</button>
+<!-- Stuck Status -->
+<button class="group relative overflow-hidden bg-surface-container-low rounded-3xl p-8 flex flex-col items-start justify-between min-h-[240px] text-left hover:bg-surface-container-highest transition-all duration-300 transform hover:scale-[1.02] border border-transparent hover:border-outline-variant/15 outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-error/10 rounded-full blur-3xl group-hover:bg-error/20 transition-all duration-500"></div>
+<div class="w-16 h-16 rounded-2xl bg-error/20 flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(255,180,171,0.15)] group-hover:shadow-[0_0_30px_rgba(255,180,171,0.3)] transition-all">
+<span class="material-symbols-outlined text-4xl text-error" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Stuck</h3>
+<p class="font-label text-error font-semibold uppercase tracking-widest text-sm">Bottlenecked</p>
+</div>
+</button>
+</div>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#1c1b1b]/80 backdrop-blur-xl rounded-t-[2rem] shadow-[0_-4px_40px_rgba(0,0,0,0.5)] no-border tonal-shift">
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="map">map</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold">Flow Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="schedule">schedule</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold">Time-Saver</span>
+</a>
+<!-- Active Nav Item -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4285F4] to-[#ea4335] text-white rounded-xl px-4 py-2 Active: scale-110 duration-300 ease-out shadow-lg" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="electric_bolt" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold">Pulse</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/40 px-4 py-2 hover:text-[#4285F4] transition-all" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold">Profile</span>
+</a>
+</nav>
+</body></html>

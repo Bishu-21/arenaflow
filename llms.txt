@@ -1,0 +1,24 @@
+# ArenaFlow OS - LLMs Reference
+
+## Project Context
+ArenaFlow OS is a Next.js 15+ (App Router) project providing B2B venue management and crowd flow optimization. It started as a consumer app but pivoted based on YC-style (Paul Graham) pressure testing to a Venue Operator OS.
+
+## Technologies
+- Next.js 15+ (RSC, Server Actions, native Metadata)
+- Tailwind CSS v4
+- Neon Serverless PostgreSQL
+- Better Auth
+- Drizzle ORM
+
+## Design Language
+Google-themed:
+- Primary: Google Blue #4285F4
+- Danger: Google Red #EA4335
+- Warning: Google Yellow #FBBC05
+- Success: Google Green #34A853
+- Text: Deep Charcoal (#121212) on Off-White backgrounds.
+
+## SEO/AEO/GEO Requirements
+- Must target Lighthouse score 100 on all pages.
+- Must include robust standard metadata and JSON-LD application schemas.
+- Content structured defensively for parsing by AI answer engines.
