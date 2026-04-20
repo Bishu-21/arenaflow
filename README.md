@@ -19,6 +19,10 @@ The core logic of ArenaFlow relies on processing real-time telemetry from a phys
 2. **Gemini AI Predictive Modeling**: Integrated via `@google/genai`, the application leverages the `gemma-4-31b-it` model to observe spatial anomalies. The "Predictive AI HUD" triggers simulations of crowd flows to detect chokepoints and offer real-time mitigation tactics.
 3. **End-to-End Secure Subscriptions**: Users authenticate securely using Better Auth. Facility and enterprise accounts can subscribe using the integrated Razorpay checkout system for omniscient-scale features.
 4. **Cloud Deployment**: The architecture is fully prepared for continuous deployment to Google Cloud Run, leveraging an enterprise-grade cloud native workflow for robust availability.
+5. **Quality Assurance & Accessibility**: 
+   - **Testing**: Implemented a comprehensive testing suite using **Vitest** and **React Testing Library**, covering core navigation and critical UI components to ensure zero-regression deployments.
+   - **Accessibility**: Architected with inclusive design patterns including full **ARIA landmark support**, unique element IDs for assistive technology, and optimized semantic structure (WCAG compliant).
+   - **Google Services Integration**: Meaningful integration of Google services including **Gemini AI** for predictive analytics and **Google Analytics** for advanced spatial behavioral tracking.
 
 ## Assumptions Made
 

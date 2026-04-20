@@ -14,8 +14,8 @@ export default function SignInPage() {
   return (
     <div className="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
       {/* Top Navigation */}
-      <header className="w-full fixed top-0 z-50 py-6 px-6 md:px-12 flex justify-between items-center max-w-[1440px] mx-auto left-0 right-0">
-        <a className="text-2xl font-bold tracking-tighter text-on-surface" href="/">ArenaFlow</a>
+      <header className="w-full fixed top-0 z-50 py-6 px-6 md:px-12 flex justify-between items-center max-w-[1440px] mx-auto left-0 right-0" role="banner">
+        <a className="text-2xl font-bold tracking-tighter text-on-surface" href="/" aria-label="ArenaFlow Home">ArenaFlow</a>
         <ThemeToggle />
       </header>
 
@@ -36,6 +36,7 @@ export default function SignInPage() {
           <button 
             onClick={handleGoogleSignIn}
             className="w-full flex items-center justify-center gap-3 bg-surface-container-lowest hover:bg-surface-container-low border border-outline-variant/15 text-on-surface py-3 px-4 rounded-full transition-colors duration-300 font-medium text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container-lowest cursor-pointer"
+            aria-label="Sign in with your Google account"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.67 15.63 16.89 16.79 15.73 17.57V20.33H19.29C21.37 18.42 22.56 15.6 22.56 12.25Z" fill="#4285F4"></path>
