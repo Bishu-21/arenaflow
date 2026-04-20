@@ -22,7 +22,11 @@ The core logic of ArenaFlow relies on processing real-time telemetry from a phys
 5. **Quality Assurance & Accessibility**: 
    - **Testing**: Implemented a comprehensive testing suite using **Vitest** and **React Testing Library**, covering core navigation and critical UI components to ensure zero-regression deployments.
    - **Accessibility**: Architected with inclusive design patterns including full **ARIA landmark support**, unique element IDs for assistive technology, and optimized semantic structure (WCAG compliant).
-   - **Google Services Integration**: Meaningful integration of Google services including **Gemini AI** for predictive analytics and **Google Analytics** for advanced spatial behavioral tracking.
+   - **Google Services Integration**:
+     - **Gemini AI**: Real-time predictive telemetry for crowd density using `gemini-1.5-flash` (via custom route handlers).
+     - **Google Maps**: Visual geospatial tracking using `@vis.gl/react-google-maps` for stadium-scale navigation.
+     - **Google Analytics**: Performance and user engagement tracking.
+     - **Google Font & Icons**: Material Symbols and Outfit typography for premium UI.
 
 ## Assumptions Made
 
